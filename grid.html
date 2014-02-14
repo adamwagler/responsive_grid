@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- Based on http://www.adamkaplan.me/grid/ -->
+    
+    <meta charset="utf-8">
+    <title>Responsive Grid Systemd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style type="text/css">
+        * { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }  
+        body { margin: 0; padding: 0; text-align: center; }
+        .row { margin-bottom: 25px; }
+        .column { background-color: #c8e8fc;}
+        
+        /* Borders and padding are drawn inside 
+           the set width of your content. The 
+           margin is drawn outside. */
+        
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            }
+        .container {
+            margin: 0 auto;
+            background-color: #eee;
+            max-width: 1200px;
+            width: 90%;
+            }
+        .column {
+            float: left;
+            margin-left: 5%;
+            }
+        .column:first-child {
+            margin-left: 0;
+            }
+        .column.full {
+            width: 100%;
+            }
+        .column.two-thirds {
+            width: 65%;
+            }
+        .column.half {
+            width: 47.5%;
+            }
+        .column.one-third {
+            width: 30%;
+            }
+        .column.one-fourth {
+            width: 21.25%;
+            }
+        
+        
+        /* Create Rows */
+        .clearfix:before, .clearfix:after {
+            content: " ";
+            display: table;
+            }
+ 
+        .clearfix:after {
+            clear: both;
+            }
+
+        .clearfix {
+            *zoom: 1;
+            }
+        
+        
+        /* Break points */
+        @media screen and (max-width: 640px) {
+            .column.full,
+            .column.two-thirds,
+            .column.half,
+            .column.one-third,
+            .column.one-fourth {
+            float: none;
+            margin: 0;
+            width: 100%;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="row clearfix">
+            <div class="column full">.column .full</div>
+        </div>
+    
+    
+        <div class="row clearfix">
+            <div class="column half">.column .half</div>
+            <div class="column half">.column .half</div>
+        </div>
+        
+        
+        <div class="row clearfix">
+            <div class="column one-third">.column .one-third</div>
+            <div class="column one-third">.column .one-third</div>
+            <div class="column one-third">.column .one-third</div>
+        </div>
+        
+        
+        <div class="row clearfix">
+            <div class="column one-third">.column .one-third</div>
+            <div class="column two-thirds">.column .two-third</div>
+        </div>
+        
+        
+        <div class="row clearfix">
+            <div class="column one-fourth">.column .one-fourth</div>
+            <div class="column one-fourth">.column .one-fourth</div>
+            <div class="column one-fourth">.column .one-fourth</div>
+            <div class="column one-fourth">.column .one-fourth</div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
