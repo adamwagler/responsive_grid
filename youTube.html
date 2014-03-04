@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>You Tube Elements</title>
+
+<!--Icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+		<link rel="apple-touch-icon-precomposed" href="#">
+		<link rel="shortcut icon" href="#">
+
+    
+<!-- For Responsive Layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        * {
+            font-family:sans-serif;
+            line-height: 1.25em;
+        }
+        h2 {
+            font-size:1.15em;
+            margin: 0;
+        }
+        .container {
+            margin: 0 auto;
+            width:90%;
+            max-width: 1200px;
+            min-width: 320px;
+        }
+        
+        .video {
+            width: 175px;
+            float: left;
+            display: inline;
+            margin: 15px 7px 0 0;
+        }
+        .caption {
+            font-size: .8em; 
+            font-weight: 600;
+            line-height: 1.3em;
+            margin: 5px 0 0 0;
+            padding: 0;
+        }
+        .description {
+            font-size: .7em; 
+            color: #444;
+            margin: 5px 0 0 0;
+            padding: 0;
+        }
+        .author, .views {
+            margin: 0 14px 0 0;   
+        }
+        
+        a {
+            color:#2793e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        
+    </style>
+    
+    
+<!-- jQuery Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+     $(document).ready(function(){
+            $('.readMore').click(function() { //readMore clicked
+                $('.hide').slideToggle('slow'); // show hidden content
+            });
+        });             
+    
+    </script>
+
+</head>
+
+<body>   
+
+
+<div class="container">
+ 
+<div class="row clearfix">
+<div class="column full nopadding">
+    
+    <h2>Recommended</h2>
+
+    <div class="video">
+        <img src="images/video.jpg" alt="Video Thumbnail">
+        <p class="caption"><a href="#">Eddie Vedder Goes Off on Violent Fan - La Sports Ar...</a></p>
+        <p class="description">by <a href="#" class="author">Will McClain</a> <span class="views">69,961 views</span> 2 months ago</p>
+    </div>
+    
+    
+    
+    <div class="video">
+        <img src="images/video.jpg" alt="Video Thumbnail">
+        <p class="caption"><a href="#">Eddie Vedder Goes Off on Violent Fan - La Sports Ar...</a></p>
+        <p class="description">by <a href="#" class="author">Will McClain</a> <span class="views">69,961 views</span> 2 months ago</p>
+    </div>
+    
+    
+    
+    <div class="video">
+        <img src="images/video.jpg" alt="Video Thumbnail">
+        <p class="caption"><a href="#">Eddie Vedder Goes Off on Violent Fan - La Sports Ar...</a></p>
+        <p class="description">by <a href="#" class="author">Will McClain</a> <span class="views">69,961 views</span> 2 months ago</p>
+    </div>
+    
+    
+    
+    <div class="video">
+        <img src="images/video.jpg" alt="Video Thumbnail">
+        <p class="caption"><a href="#">Eddie Vedder Goes Off on Violent Fan - La Sports Ar...</a></p>
+        <p class="description">by <a href="#" class="author">Will McClain</a> <span class="views">69,961 views</span> 2 months ago</p>
+    </div>
+
+        
+     
+    <div class="video">
+        <img src="images/video.jpg" alt="Video Thumbnail">
+        <p class="caption"><a href="#">Eddie Vedder Goes Off on Violent Fan - La Sports Ar...</a></p>
+        <p class="description">by <a href="#" class="author">Will McClain</a> <span class="views">69,961 views</span> 2 months ago</p>
+    </div>
+    
+        
+     
+    <div class="video">
+        <img src="images/video.jpg" alt="Video Thumbnail">
+        <p class="caption"><a href="#">Eddie Vedder Goes Off on Violent Fan - La Sports Ar...</a></p>
+        <p class="description">by <a href="#" class="author">Will McClain</a> <span class="views">69,961 views</span> 2 months ago</p>
+    </div>
+    
+</div>
+</div>    
+    
+</div><!--close container --> 
+</body>
+</html>
