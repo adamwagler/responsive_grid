@@ -105,6 +105,20 @@ footer {
     }
 
 
+/* Alignment Styles */
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
 
 /* Navigation */
 nav {
@@ -151,7 +165,7 @@ img {
 }
 
 
-/* Styles */
+/* Visual Styles */
 .muted {
     color: rgb(153, 153, 153);
 }
