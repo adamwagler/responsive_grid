@@ -12,10 +12,10 @@
         * { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }  
         body { margin: 0; padding: 0; text-align: center; }
         .row { margin-bottom: 25px; }
-        .column { background-color: #c8e8fc;}
+        .column { background-color: rgba(200, 232, 252, .65);}
         
-        /* Borders and padding are drawn inside 
-           the set width of your content. The 
+        /* Box-sizing = borders and padding are drawn 
+           inside the set width of your content. The 
            margin is drawn outside. */
         
         *, *:before, *:after {
@@ -32,6 +32,7 @@
         .column {
             float: left;
             margin-left: 5%;
+            padding: 0%;
             }
         .column:first-child {
             margin-left: 0;
@@ -51,7 +52,12 @@
         .column.one-fourth {
             width: 21.25%;
             }
-        
+        .column.three-fourths {
+            width: 73.75%;
+            }       
+        .nopadding {
+            padding: 0;
+            }
         
         /* Create Rows */
         .clearfix:before, .clearfix:after {
@@ -67,6 +73,25 @@
             *zoom: 1;
             }
         
+        /* Alignment */
+        .text-left {
+            text-align: left;
+            }
+        .text-center {
+            text-align: center;
+            }
+        .text-right {
+            text-align: right;
+            }
+        .pull-left {
+            float: left;
+            } 
+        .pull-right {
+            float: right;
+            }
+        .clear {
+            clear: both;   
+            }
         
         /* Break points */
         @media screen and (max-width: 640px) {
@@ -108,7 +133,7 @@
         
         <div class="row clearfix">
             <div class="column one-third">.column .one-third</div>
-            <div class="column two-thirds">.column .two-third</div>
+            <div class="column two-thirds">.column .two-thirds</div>
         </div>
         
         
@@ -118,8 +143,25 @@
             <div class="column one-fourth">.column .one-fourth</div>
             <div class="column one-fourth">.column .one-fourth</div>
         </div>
+        
+        <div class="row clearfix">
+            <div class="column one-fourth">.column .one-fourth</div>
+            <div class="column three-fourths">.column .three-fourths</div>
+        </div>
+        
+        <!-- Nested Columns -->
+        <div class="row clearfix">
+            <div class="column one-fourth">.column .one-fourth</div>
+            <div class="column three-fourths">
+                <!-- Note the start of another row with new set of columns -->
+                <div class="row clearfix">
+                    <div class="column half">.column .half</div>
+                    <div class="column half">.column .half</div>
+                </div>
+            </div>
+        </div>
     
-    </div>
+    </div><!-- Close container -->
     
 </body>
 </html>

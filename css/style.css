@@ -1,6 +1,9 @@
-* {
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-family:sans-serif;
-  }
+    }
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -23,17 +26,17 @@ body {
     background-repeat:no-repeat;
 }
 h1 {
-    font-size:2em;
-    margin: .25em 0;
+    font-size:2rem;
+    margin: .25rem 0;
 }
 h2 {
     margin: 0;
     padding: 0;
 }
 p, ul, ol {
-    font-size:1em;
+    font-size:1rem;
     color: #333;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 a {
     color:#007ea7;
@@ -41,27 +44,14 @@ a {
 a:hover {
     text-decoration:none;
 }
-footer {
-    text-align: center;
-}
 
 
 /* Grid Structure */
 .container {
     margin: 0 auto;
-    width:90%;
+    background-color: #eee;
     max-width: 1200px;
-    min-width: 320px;
-    background-color:#fff;
-    -moz-border-bottom-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    -moz-border-bottom-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    width: 90%;
     }
 .column {
     float: left;
@@ -86,6 +76,9 @@ footer {
 .column.one-fourth {
     width: 21.25%;
     }
+.column.three-fourths {
+    width: 73.75%;
+    }       
 .nopadding {
     padding: 0;
     }
@@ -104,20 +97,25 @@ footer {
     *zoom: 1;
     }
 
-
-/* Alignment Styles */
-.pull-left {
-  float: left !important;
-}
-.pull-right {
-  float: right !important;
-}
+/* Alignment */
 .text-left {
-  text-align: left;
-}
+    text-align: left;
+    }
+.text-center {
+    text-align: center;
+    }
 .text-right {
-  text-align: right;
-}
+    text-align: right;
+    }
+.pull-left {
+    float: left;
+    } 
+.pull-right {
+    float: right;
+    }
+.clear {
+    clear: both;   
+    }
 
 
 /* Navigation */
@@ -161,13 +159,12 @@ nav li a:hover {
 /* Responsive Images */
 img {
     max-width:100%;
-    display:block;
 }
 
 
 /* Visual Styles */
-.muted {
-    color: rgb(153, 153, 153);
+.promo {
+    display: block;   
 }
 .hide {
     display:none;
@@ -175,6 +172,9 @@ img {
 .readMore {
     cursor:pointer;
     color:#007ea7;
+}
+.muted {
+    color: rgb(153, 153, 153);
 }
 
 
